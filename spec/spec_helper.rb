@@ -12,3 +12,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+def asset_path(*args)
+  File.join(".", "spec", "assets", *args)
+end
